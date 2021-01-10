@@ -1,0 +1,40 @@
+HTTP 1
+------
+1)For every TCP connection there is only one request and one response.
+2)Headers are sent on every request leading to a lot of duplicate data being sent uncompressed across the wire.
+3)Text based protocol that is in the readable form.
+4)Provides support for caching to deliver pages faster.
+
+HTTP 2
+------
+1)Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost at the same time.
+2)Header compression is included by default in HTTP/2 using HPACK.
+3)It is a binary protocol.Needs to be converted back from binary in order to read it.
+4)Removes the need for unnecessary optimization hacks.
+------------------------------------------------------
+HTTP VERSION HISTORY
+---------------------
+1991	0.9
+1996	1.0
+1997	1.1
+2015	2.0
+Draft (2020)	3.0
+-------------------------------------------------------
+BROWSER JS VS NODE JS
+----------------------
+1)browser js is run in the browser itself while node js can run in different environments.
+2)due to its modules, node js has more interactive and better APIs.
+3)browser js has DOM involved ,node js no such gui is present.
+4) script tag is used in browser js , node js are of .js file format
+5)unlike browser js ,different versions of javascript can be used in node js.
+
+-------------------------------------------------------------------------------
+what happens when you type a URL in the address bar in the browser?
+------------------------------------------------------------------
+You enter a URL into a web browser
+The browser looks up the IP address for the domain name via DNS
+The browser sends a HTTP request to the server
+The server sends back a HTTP response
+The browser begins rendering the HTML
+The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
+Once the page is loaded, the browser sends further async requests as needed.
