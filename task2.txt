@@ -1,0 +1,17 @@
+call by value vs call by refernece
+---------------------------------
+The difference between call by reference and call by value is,
+call by value creates a new space in memory and makes a copy of a value,whereas call by reference does not.
+Instead of making a copy, in call by reference ,a value stored in memory gets referenced.
+-------------------------------------------------------------------------------------------
+
+How to copy by value a composite datatype (array+objects)
+------------------------------------------------------
+1)spread operator(...)
+it converts to list ex let a=[1,2,3]
+                       let b=[...a]
+
+2)Object.assign()
+it copies from source(one or more) to target. ex let a=[1,2,3]
+                                                 let b=Object.assign([],a)  
+                          
